@@ -1,0 +1,170 @@
+:root {
+  --bg: #e6e5e3;
+  --blue: rgb(1, 31, 150);
+  --shadow: #b3b3b3;
+  --gray: #383939;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
+.Card {
+  width: 390px;
+  box-shadow: 1px 1px 6px 6px var(--shadow), 1px 1px 6px 1px var(--blue);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: var(--bg);
+}
+
+/* image */
+.Card .image {
+  width: 100%;
+}
+/* image */
+.Card .image .shoe {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+/* title */
+.Card .title {
+  font-size: 35px;
+  font-weight: bolder;
+}
+/* price */
+.Card .price .before {
+  text-decoration: line-through;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--blue);
+}
+.Card .price .dash {
+  font-size: 30px;
+}
+
+.Card .price .after {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+/* size */
+
+.Card .size {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card .size .size-title {
+  height: 50px;
+  width: 25%;
+  font-size: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 600;
+}
+
+.Card .size .size-box {
+  height: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Card .size .size-box span {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: white;
+  width: 60px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray);
+}
+
+.Card .size .size-box .choose {
+  border: 3px solid var(--blue);
+}
+
+/* description */
+
+.Card .description {
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Buy */
+.Card .Buy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.Card .Buy button {
+  width: 45%;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 45px;
+}
+
+.Card .Buy .Number {
+  width: 45%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Card .Buy .Number::before {
+  content: "-";
+  background-color: var(--blue);
+  color: white;
+  font-size: 25px;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.Card .Buy .Number::after {
+  content: "+";
+  background-color: var(--blue);
+  color: white;
+  font-size: 25px;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
